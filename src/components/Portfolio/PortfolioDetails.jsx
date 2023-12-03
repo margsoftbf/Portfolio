@@ -24,6 +24,7 @@ const PortfolioDetails = ({ openModal, setOpenModal }) => {
 					/>
 					<img
 						src={project?.image}
+						alt={project?.alt}
 						className='w-full object-cover rounded-xl mt-7 shadow-sm'
 					/>
 					<h3 className='title text-2xl lg:text-3xl font-semibold overflow-hidden mt-4 text-stone-300'>

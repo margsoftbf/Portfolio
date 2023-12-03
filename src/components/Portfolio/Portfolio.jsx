@@ -11,9 +11,8 @@ const projects = [
 		title: 'Admin Dashboard',
 		description:
 			'Welcome to my dashboard application, a comprehensive solution designed to streamline your day-to-day activities and provide valuable insights across various domains. This versatile application offers a rich set of features to enhance your productivity and decision-making processes.',
-		image:
-			'https://raw.githubusercontent.com/margsoftbf/Portfolio/main/public/assets/AdminDashboard.webp',
-			imageAlt: 'Admin Dashboard Screenshot',
+		image: './assets/AdminDashboard.webp',
+		imageAlt: 'Admin Dashboard Screenshot',
 		tags: [
 			'React',
 			'Typescript',
@@ -34,9 +33,8 @@ const projects = [
 		title: 'Admin Dashboard',
 		description:
 			'Welcome to my dashboard application, a comprehensive solution designed to streamline your day-to-day activities and provide valuable insights across various domains. This versatile application offers a rich set of features to enhance your productivity and decision-making processes.',
-		image:
-			'https://raw.githubusercontent.com/margsoftbf/Portfolio/main/public/assets/AdminDashboard.webp',
-			imageAlt: 'Admin Dashboard Screenshot',
+		image: './assets/AdminDashboard.webp',
+		imageAlt: 'Admin Dashboard Screenshot',
 		tags: [
 			'React',
 			'Typescript',
@@ -57,8 +55,7 @@ const projects = [
 		title: 'Admin Dashboard',
 		description:
 			'Welcome to my dashboard application, a comprehensive solution designed to streamline your day-to-day activities and provide valuable insights across various domains. This versatile application offers a rich set of features to enhance your productivity and decision-making processes.',
-		image:
-			'https://raw.githubusercontent.com/margsoftbf/Portfolio/main/public/assets/AdminDashboard.webp',
+		image: './assets/AdminDashboard.webp',
 		imageAlt: 'Admin Dashboard Screenshot',
 		tags: [
 			'React',
