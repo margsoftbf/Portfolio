@@ -96,7 +96,6 @@ const skills = [
 	},
 ];
 
-
 const Skills = () => {
 	return (
 		<motion.div
@@ -112,7 +111,11 @@ const Skills = () => {
 							key={skill.id}
 							className="relative flex flex-row items-center top-0 w-44 h-10 m-2 rounded-md bg-[#313552] cursor-pointer before:content-[''] before:absolute before:left-10 before:w-[2px] before:h-[70%] before:bg-darkNavy before:bg-opacity-50 transition-all duration-300 ease-in-out hover:-top-1 hover:shadow-myShadow hover:duration-300  "
 						>
-							<img src={skill.src} alt={skill.alt} className='mx-2' />
+							<img
+								src={skill.src}
+								alt={skill.alt}
+								className='mx-2 w-auto h-auto'
+							/>
 							<p className='ml-1'>{skill.name}</p>
 						</div>
 					))}

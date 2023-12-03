@@ -10,6 +10,7 @@ const PortfolioCard = ({ project, setOpenModal }) => {
 			<TbHandClick className='text-white text-3xl absolute top-6 right-6 z-20' />
 			<img
 				src={project.image}
+				alt={project.imageAlt}
 				className='w-full h-44 bg-white rounded-xl shadow-md brightness-75'
 			/>
 			<div className='tags w-full flex items-center flex-wrap gap-2 mt-1'>

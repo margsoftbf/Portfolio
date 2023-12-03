@@ -1,29 +1,28 @@
 import React from 'react';
 import HeroBgAnimation from './HeroBgAnimation';
 import Typewriter from 'typewriter-effect';
-import heroAvatar from '../../assets/img/avatar2.jpg';
+import heroAvatar from '../../assets/img/avatar.webp';
 import { motion } from 'framer-motion';
 
-
 const fadeInUp = {
-	initial:{
-	  opacity:0,
+	initial: {
+		opacity: 0,
 	},
-	animate:{
-	  opacity:1,
-	  transition:{
-		delay:2.5,
-		duration:.3
-	  }
-	}
-  };
+	animate: {
+		opacity: 1,
+		transition: {
+			delay: 2.5,
+			duration: 0.3,
+		},
+	},
+};
 
 const Hero = () => {
 	return (
 		<motion.div
 			className='flex justify-center relative pt-20 pb-2 px-7 text-white lg:pb-20 max-w-[1280px] m-auto'
-			initial={{ opacity: 0, }}
-			animate={{ opacity: 1, }}
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
 			transition={{ duration: 1, ease: [0.6, -0.05, 0.01, 0.99] }}
 		>
 			<div className='absolute flex justify-center top-0 right-0 bottom-0 left-0 w-full h-full lg:justify-end lg:mt-8'>
