@@ -37,6 +37,7 @@ const Navbar = () => {
 					<li>
 						<ScrollLink
 							to='skills'
+							aria-label='skills'
 							smooth={true}
 							duration={500}
 							className='transition duration-300 ease-in-out hover:text-lightOrange hover:duration-300 cursor-pointer'
@@ -48,6 +49,7 @@ const Navbar = () => {
 					<li>
 						<ScrollLink
 							to='experience'
+							aria-label='experience'
 							smooth={true}
 							duration={500}
 							className='transition duration-300 ease-in-out hover:text-lightOrange hover:duration-300 cursor-pointer'
@@ -59,6 +61,7 @@ const Navbar = () => {
 					<li>
 						<ScrollLink
 							to='portfolio'
+							aria-label='portfolio'
 							smooth={true}
 							duration={500}
 							className='transition duration-300 ease-in-out hover:text-lightOrange hover:duration-300 cursor-pointer'
@@ -70,6 +73,7 @@ const Navbar = () => {
 					<li>
 						<ScrollLink
 							to='contact'
+							aria-label='contact'
 							smooth={true}
 							duration={500}
 							className='transition duration-300 ease-in-out hover:text-lightOrange hover:duration-300 cursor-pointer'
@@ -95,6 +99,7 @@ const Navbar = () => {
 					>
 						<ScrollLink
 							to='skills'
+							aria-label='skills'
 							smooth={true}
 							duration={500}
 							className='transition duration-300 ease-in-out hover:text-lightOrange hover:duration-300 cursor-pointer'
@@ -107,6 +112,7 @@ const Navbar = () => {
 						</ScrollLink>
 						<ScrollLink
 							to='experience'
+							aria-label='experience'
 							smooth={true}
 							duration={500}
 							className='transition duration-300 ease-in-out hover:text-lightOrange hover:duration-300 cursor-pointer'
@@ -119,6 +125,7 @@ const Navbar = () => {
 						</ScrollLink>
 						<ScrollLink
 							to='portfolio'
+							aria-label='portfolio'
 							smooth={true}
 							duration={500}
 							className='transition duration-300 ease-in-out hover:text-lightOrange hover:duration-300 cursor-pointer'
@@ -131,6 +138,7 @@ const Navbar = () => {
 						</ScrollLink>
 						<ScrollLink
 							to='contact'
+							aria-label='contact'
 							smooth={true}
 							duration={500}
 							className='transition duration-300 ease-in-out hover:text-lightOrange hover:duration-300 cursor-pointer'
