@@ -5,9 +5,10 @@ const PortfolioCard = ({ project, setOpenModal }) => {
 	return (
 		<div
 			onClick={() => setOpenModal({ state: true, project: project })}
-			className='w-72 lg:w-96 h-[440px] bg-[#15172b] cursor-pointer rounded-xl shadow-md overflow-hidden py-5 px-4 flex flex-col gap-4 transition-all duration-500 ease-in-out hover:-translate-y-4 hover:shadow-2xl hover:brightness-110 relative'
+			className='w-80 lg:w-96 h-auto bg-[#15172b] cursor-pointer rounded-xl shadow-md overflow-hidden py-5 px-4 flex flex-col gap-4 transition-all duration-500 ease-in-out hover:-translate-y-4 hover:shadow-2xl hover:brightness-110 relative'
 		>
 			<TbHandClick className='text-white text-3xl absolute top-6 right-6 z-20' />
+
 			<img
 				src={project.image}
 				alt={project.imageAlt}
@@ -24,10 +25,20 @@ const PortfolioCard = ({ project, setOpenModal }) => {
 				))}
 			</div>
 			<div className='details w-full flex flex-col justify-start text-left gap-0 px-1'>
-				<h3 className='title text-xl font-semibold overflow-hidden mt-1 text-stone-300'>
+				<h3 className='title text-xl font-semibold overflow-hidden mt-1 text-stone-300 flex flex-col'>
 					{project.title}
+					{''}
 				</h3>
-				<p className='description mt-3 text-slate-500 text-sm max-w-full line-clamp-3 box-orient-vertical'>
+				{project.finished ? (
+					<span className='text-xs font-semibold my-2 rounded-md text-green-700 bg-green-300 ring-green-600/20 w-16 text-center'>
+						Finished
+					</span>
+				) : (
+					<span className='text-xs font-semibold my-2 rounded-md text-yellow-800 bg-yellow-200 ring-yellow-600/20 w-20 text-center'>
+						In progress
+					</span>
+				)}
+				<p className='description text-slate-500 text-sm max-w-full line-clamp-3 box-orient-vertical'>
 					{project.description}
 				</p>
 			</div>
