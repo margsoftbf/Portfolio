@@ -43,7 +43,7 @@ const PortfolioDetails = ({ openModal, setOpenModal }) => {
 					<p className='description mt-4 text-slate-200 text-base max-w-full box-orient-vertical'>
 						{project.description}
 					</p>
-					<div className='buttonGroup flex justify-end gap-3 mt-6 mb-3'>
+					<div className='buttonGroup flex flex-col md:flex-row justify-end gap-3 mt-6 mb-3'>
 						<a
 							dull
 							href={project?.github}

@@ -109,7 +109,7 @@ const Skills = () => {
 					{skills.map((skill) => (
 						<div
 							key={skill.id}
-							className="relative flex flex-row items-center top-0 w-44 h-10 m-2 rounded-md bg-[#313552] cursor-pointer before:content-[''] before:absolute before:left-10 before:w-[2px] before:h-[70%] before:bg-darkNavy before:bg-opacity-50 transition-all duration-300 ease-in-out hover:-top-1 hover:shadow-myShadow hover:duration-300  "
+							className="relative flex flex-row items-center top-0 w-44 h-10 m-2 rounded-md bg-[#313552] cursor-pointer before:content-[''] before:absolute before:left-9 before:w-[2px] before:h-[50%] before:bg-lightOrange/10 before:bg-opacity-50 transition-all duration-300 ease-in-out hover:-top-1 hover:shadow-myShadow hover:duration-300  "
 						>
 							<img src={skill.src} alt={skill.alt} className='mx-2 w-6 h-6' />
 							<p className='ml-1'>{skill.name}</p>
