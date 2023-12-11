@@ -31,7 +31,7 @@ const projects = [
 	},
 	{
 		id: 2,
-		title: 'Ecommerce PC Parts Computer Shop',
+		title: 'PC Parts Computer Shop',
 		description:
 			'Welcome to Terabit Supply, an advanced e-commerce platform specializing in computer hardware. Our store offers a wide array of computer components, accessories, and peripherals, catering to both gaming enthusiasts and IT professionals.',
 		image: './assets/TerabitSupply.webp',
