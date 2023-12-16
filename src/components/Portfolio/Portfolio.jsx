@@ -8,26 +8,26 @@ import { motion } from 'framer-motion';
 const projects = [
 	{
 		id: 1,
-		title: 'Admin Dashboard',
+		title: 'Fusion Feast Restaurant',
 		description:
-			'Welcome to my dashboard application, a comprehensive solution designed to streamline your day-to-day activities and provide valuable insights across various domains. This versatile application offers a rich set of features to enhance your productivity and decision-making processes.',
-		image: './assets/AdminDashboard.webp',
-		imageAlt: 'Admin Dashboard Screenshot',
+			'Welcome to Fusion Feast, a contemporary dining experience that combines traditional flavors with a modern twist. Our restaurant offers a unique menu that lets you customize your favorite dishes like pizzas, burgers, and more. Enjoy a seamless ordering and dining experience with our state-of-the-art digital platform.',
+		image: './assets/FusionFeast.webp',
+		imageAlt: 'Fusion Feast Screenshot',
 		tags: [
 			'React',
 			'Typescript',
 			'Tailwind CSS',
 			'React Router',
-			'MUI Data Grid',
-			'Nivo Charts',
+			'Next js',
+			'Redux',
 			'Date fns',
 			'Framer motion',
 			'Swiper',
 		],
 		category: 'web app',
 		finished: false,
-		github: 'https://github.com/margsoftbf/AdminDashboard',
-		webapp: 'https://admin-garski-dashboard.netlify.app/',
+		github: 'https://github.com/margsoftbf/Fusion-Feast-Restaurant',
+		webapp: 'https://fusion-feast-restaurant.vercel.app/',
 	},
 	{
 		id: 2,
@@ -50,7 +50,7 @@ const projects = [
 		category: 'web app',
 		finished: true,
 		github: 'https://github.com/margsoftbf/Terabit-Supply',
-		webapp: 'https://terabit-supply.netlify.app/',
+		webapp: 'https://terabit-supply.vercel.app/',
 	},
 	{
 		id: 3,
@@ -73,7 +73,7 @@ const projects = [
 		category: 'web app',
 		finished: true,
 		github: 'https://github.com/margsoftbf/AdminDashboard',
-		webapp: 'https://admin-garski-dashboard.netlify.app/',
+		webapp: 'https://admin-dashboard-gary.vercel.app/',
 	},
 ];
 
