@@ -44,7 +44,7 @@ const contactItems = [
 	},
 	{
 		id: 6,
-		href: './assets/files/Marcin-Garski-Resume.pdf',
+		href: './assets/Resume/Marcin-Garski-Resume.pdf',
 		title: 'Resume',
 		info: 'Download',
 		icon: <FaRegFile />,

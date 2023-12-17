@@ -59,7 +59,7 @@ const Hero = () => {
 						skills and experiences to further elevate value to the organization.
 					</p>
 					<a
-						href='#'
+						href='./assets/Resume/Marcin-Garski-Resume.pdf'
 						target='display'
 						className='mt-4 rounded-md bg-lightOrange px-8 py-2.5 text-md font-semibold border-2 border-lightOrange text-darkNavy shadow-sm hover:bg-lightNavy hover:text-white hover:border-2 hover:border-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 transition duration-300 ease-in-out hover:duration-300'
 					>
