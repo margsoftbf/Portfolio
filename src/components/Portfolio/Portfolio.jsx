@@ -20,7 +20,7 @@ const projects = [
 			'React Router',
 			'Next js',
 			'Redux',
-			'Date fns',
+			'React Context',
 			'Framer motion',
 			'Swiper',
 		],
