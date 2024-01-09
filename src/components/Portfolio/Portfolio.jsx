@@ -25,9 +25,9 @@ const projects = [
 			'Swiper',
 		],
 		category: 'web app',
-		finished: false,
+		finished: true,
 		github: 'https://github.com/margsoftbf/Fusion-Feast-Restaurant',
-		webapp: 'https://fusion-feast-restaurant.vercel.app/',
+		webapp: 'https://restaurant.marcingarski.com/',
 	},
 	{
 		id: 2,
