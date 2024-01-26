@@ -12,7 +12,12 @@ import materialIcon from '../../assets/img/skills/material-ui.png';
 import webpackIcon from '../../assets/img/skills/webpack.png';
 import viteIcon from '../../assets/img/skills/vite.png';
 import affinityIcon from '../../assets/img/skills/affinity.png';
+import photoshopIcon from '../../assets/img/skills/photoshop.png';
 import figmaIcon from '../../assets/img/skills/figma.png';
+import gitIcon from '../../assets/img/skills/git.png';
+import mongodbIcon from '../../assets/img/skills/mongodb.png';
+import nodejsIcon from '../../assets/img/skills/nodejs.png';
+import firebaseIcon from '../../assets/img/skills/firebase.png';
 import { motion } from 'framer-motion';
 
 const skills = [
@@ -90,10 +95,40 @@ const skills = [
 	},
 	{
 		id: 13,
+		name: 'Photoshop',
+		src: photoshopIcon,
+		alt: 'adobe photoshop icon',
+	},
+	{
+		id: 14,
 		name: 'Figma',
 		src: figmaIcon,
 		alt: 'figma icon',
 	},
+	{
+		id: 15,
+		name: 'Git',
+		src: gitIcon,
+		alt: 'git icon',
+	},
+	// {
+	// 	id: 16,
+	// 	name: 'MongoDB',
+	// 	src: mongodbIcon,
+	// 	alt: 'mongodb icon',
+	// },
+	// {
+	// 	id: 17,
+	// 	name: 'Nodejs',
+	// 	src: nodejsIcon,
+	// 	alt: 'node js icon',
+	// },
+	// {
+	// 	id: 18,
+	// 	name: 'Firebase',
+	// 	src: firebaseIcon,
+	// 	alt: 'firebase icon',
+	// },
 ];
 
 const Skills = () => {

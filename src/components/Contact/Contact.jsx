@@ -33,7 +33,7 @@ const contactItems = [
 	{
 		id: 4,
 		title: 'Location',
-		info: 'Garfield, NJ, USA',
+		info: 'Katowice, Poland',
 		icon: <FaLocationDot />,
 	},
 	{

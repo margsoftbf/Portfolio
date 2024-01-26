@@ -11,7 +11,7 @@ const experienceData = [
 		workTitle: 'E-commerce Specialist',
 		where: 'A&J Vacuum Services, Clifton, NJ',
 		description:
-			'Manages and actively optimizes eCommerce operations to promote offerings for this vacuum service provider. Utilizes industry-best optimization techniques to bolster the website’s Google ranking.',
+			`Manages and actively optimizes eCommerce operations to promote offerings for this vacuum service provider. Utilizes industry-best optimization techniques to bolster the website’s Google ranking.`,
 	},
 	{
 		id: 2,
