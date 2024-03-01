@@ -50,10 +50,18 @@ const Hero = () => {
 						</span>
 					</div>
 					<p className='leading-7 text-stone-400 lg:text-left md:leading-8'>
-					Currently I am in the process of moving to Poland after 9 years spent in the United States. Analytical and detail-oriented professional with valuable experience in front-end development, project management and web design across various industries. Highly skilled in building and implementing high-quality, scalable and maintainable components for web applications while translating design mock-ups into functional features and reviewing codes. Track record of keeping up with the latest industry trends, technologies, frameworks and best practices in front-end development.
+						Currently I am in the process of moving to Poland after 9 years
+						spent in the United States. Analytical and detail-oriented
+						professional with valuable experience in front-end development,
+						project management and web design across various industries. Highly
+						skilled in building and implementing high-quality, scalable and
+						maintainable components for web applications while translating
+						design mock-ups into functional features and reviewing codes. Track
+						record of keeping up with the latest industry trends, technologies,
+						frameworks and best practices in front-end development.
 					</p>
 					<a
-						href='./assets/Resume/Marcin-Garski-Resume.pdf'
+						href='./assets/Resume/Marcin-Garski-CV.pdf'
 						target='display'
 						className='mt-4 rounded-md bg-lightOrange px-8 py-2.5 text-md font-semibold border-2 border-lightOrange text-darkNavy shadow-sm hover:bg-lightNavy hover:text-white hover:border-2 hover:border-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 transition duration-300 ease-in-out hover:duration-300'
 					>
