@@ -50,15 +50,15 @@ const Hero = () => {
 						</span>
 					</div>
 					<p className='leading-7 text-stone-400 lg:text-left md:leading-8'>
-						Currently I am in the process of moving to Poland after 9 years
-						spent in the United States. Analytical and detail-oriented
-						professional with valuable experience in front-end development,
-						project management and web design across various industries. Highly
-						skilled in building and implementing high-quality, scalable and
-						maintainable components for web applications while translating
-						design mock-ups into functional features and reviewing codes. Track
-						record of keeping up with the latest industry trends, technologies,
-						frameworks and best practices in front-end development.
+						I have spent the last 9 years in the United States. Analytical and
+						detail-oriented in front-end development, website design in various
+						industries. I am skilled in building and implementing high-quality,
+						scalable and easy-to-maintain components for web applications.
+						Proficient in debugging software defects, resolving issues, and
+						providing constructive feedback. Able to collect information from
+						users to create functional and user-friendly websites. Experience
+						keeping up with the latest industry trends, technologies, frameworks
+						and best practices in front-end development.
 					</p>
 					<a
 						href='./assets/Resume/Marcin-Garski-CV.pdf'
