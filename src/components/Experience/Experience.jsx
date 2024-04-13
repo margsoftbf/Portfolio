@@ -7,7 +7,7 @@ import { Element } from 'react-scroll';
 const experienceData = [
 	{
 		id: 1,
-		dateRange: 'Jun. 2019 - Present',
+		dateRange: 'Jun. 2019 - May 2024',
 		workTitle: 'E-commerce Specialist',
 		where: 'A&J Vacuum Services, Clifton, NJ',
 		description:
@@ -33,7 +33,7 @@ const experienceData = [
 const schoolData = [
 	{
 		id: 1,
-		dateRange: '2021 - present',
+		dateRange: '2022 - present',
 		title: 'Web Development Studies',
 		where: 'Online programs',
 		description:
