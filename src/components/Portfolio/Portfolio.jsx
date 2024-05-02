@@ -50,7 +50,7 @@ const projects = [
 		],
 		category: 'web app',
 		finished: true,
-		github: 'https://github.com/margsoftbf/Fusion-Feast-Restaurant',
+		github: 'https://github.com/margsoftbf/Travelo',
 		webapp: 'https://travelo.marcingarski.com/',
 	},
 	{
