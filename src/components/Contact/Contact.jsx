@@ -39,7 +39,7 @@ const contactItems = [
 	{
 		id: 5,
 		title: 'Phone',
-		info: '+1 973 800 4853',
+		info: '+48 577 793 533',
 		icon: <FaPhone />,
 	},
 	{
