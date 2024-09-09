@@ -18,6 +18,10 @@ import gitIcon from '../../assets/img/skills/git.png';
 import mongodbIcon from '../../assets/img/skills/mongodb.png';
 import nodejsIcon from '../../assets/img/skills/nodejs.png';
 import firebaseIcon from '../../assets/img/skills/firebase.png';
+import postmanIcon from '../../assets/img/skills/postman.png';
+import nestjsIcon from '../../assets/img/skills/nestjs.png';
+import postgresIcon from '../../assets/img/skills/postgres.png';
+
 import { motion } from 'framer-motion';
 
 const skills = [
@@ -59,72 +63,90 @@ const skills = [
 	},
 	{
 		id: 7,
+		name: 'Nest.js',
+		src: nestjsIcon,
+		alt: 'nestjs icon',
+	},
+	{
+		id: 8,
+		name: 'Postgres',
+		src: postgresIcon,
+		alt: 'postgres icon',
+	},
+	{
+		id: 9,
+		name: 'Postman',
+		src: postmanIcon,
+		alt: 'postman icon',
+	},
+	{
+		id: 20,
+		name: 'Nodejs',
+		src: nodejsIcon,
+		alt: 'node js icon',
+	},
+	{
+		id: 10,
 		name: 'SASS',
 		src: sassIcon,
 		alt: 'sass icon',
 	},
 	{
-		id: 8,
+		id: 11,
 		name: 'Tailwind',
 		src: tailwindIcon,
 		alt: 'tailwind icon',
 	},
 	{
-		id: 9,
+		id: 12,
 		name: 'Material UI',
 		src: materialIcon,
 		alt: 'material ui icon',
 	},
 	{
-		id: 10,
+		id: 13,
 		name: 'Webpack',
 		src: webpackIcon,
 		alt: 'webpack icon',
 	},
 	{
-		id: 11,
+		id: 14,
 		name: 'Vite',
 		src: viteIcon,
 		alt: 'vite icon',
 	},
 	{
-		id: 12,
+		id: 15,
 		name: 'Affinity Photo',
 		src: affinityIcon,
 		alt: 'affinity photo icon',
 	},
 	{
-		id: 13,
+		id: 16,
 		name: 'Photoshop',
 		src: photoshopIcon,
 		alt: 'adobe photoshop icon',
 	},
 	{
-		id: 14,
+		id: 17,
 		name: 'Figma',
 		src: figmaIcon,
 		alt: 'figma icon',
 	},
 	{
-		id: 15,
+		id: 18,
 		name: 'Git',
 		src: gitIcon,
 		alt: 'git icon',
 	},
 	// {
-	// 	id: 16,
+	// 	id: 19,
 	// 	name: 'MongoDB',
 	// 	src: mongodbIcon,
 	// 	alt: 'mongodb icon',
 	// },
 	// {
-	// 	id: 17,
-	// 	name: 'Nodejs',
-	// 	src: nodejsIcon,
-	// 	alt: 'node js icon',
-	// },
-	// {
-	// 	id: 18,
+	// 	id: 21,
 	// 	name: 'Firebase',
 	// 	src: firebaseIcon,
 	// 	alt: 'firebase icon',

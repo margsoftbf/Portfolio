@@ -7,14 +7,20 @@ import { Element } from 'react-scroll';
 const experienceData = [
 	{
 		id: 1,
-		dateRange: 'Jun. 2019 - May 2024',
-		workTitle: 'E-commerce Specialist',
-		where: 'A&J Vacuum Services, Clifton, NJ',
-		description:
-			`Manages and actively optimizes eCommerce operations to promote offerings for this vacuum service provider. Utilizes industry-best optimization techniques to bolster the website’s Google ranking.`,
+		dateRange: 'Aug 2024  - Present',
+		workTitle: 'Junior Fullstack Developer',
+		where: 'Remote, Poland',
+		description: `Junior Fullstack Developer with experience in React, Next.js, Tailwind CSS on the frontend and Nest.js with PostgreSQL on the backend. Focused on building efficient and scalable web applications.`,
 	},
 	{
 		id: 2,
+		dateRange: 'Jun. 2019 - May 2024',
+		workTitle: 'E-commerce Specialist',
+		where: 'A&J Vacuum Services, Clifton, NJ',
+		description: `Manages and actively optimizes eCommerce operations to promote offerings for this vacuum service provider. Utilizes industry-best optimization techniques to bolster the website’s Google ranking.`,
+	},
+	{
+		id: 3,
 		dateRange: 'July 2015 - May 2019',
 		workTitle: 'Machine Operator',
 		where: 'Precision Custom Coatings, Totowa, NJ',
@@ -22,7 +28,7 @@ const experienceData = [
 			'Performed duties involving operation, maintenance, and configuration of machines utilized for accomplishing custom coating orders.',
 	},
 	{
-		id: 3,
+		id: 4,
 		dateRange: 'Aug. 2012 - May 2015',
 		workTitle: 'Call Center Operator',
 		where: 'Solid Security, Katowice, Poland',
