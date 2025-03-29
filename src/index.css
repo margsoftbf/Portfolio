@@ -1,9 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @layer base {
 	body {
-		@apply bg-[#232639];
+		@apply bg-[#0f0715];
 	}
+}
+
+@layer components {
+	.after-divider::after {
+		content: '';
+		position: absolute;
+		right: -16px;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 70%;
+		width: 1px;
+		opacity: 50%;
+		background-color: #fff;
+	}
+
+	.linkAni {
+		position: relative;
+		padding: 5px 5px;
+		text-decoration: none;
+		font-size: 15px;
+		cursor: pointer;
+	}
+
+	.linkAni::after {
+		content: '';
+		position: absolute;
+		background-image: linear-gradient(260deg, #2a1454 0%, #8750f7 100%);
+		bottom: 0;
+		left: 0;
+		height: 3px;
+		width: 100%;
+		transition: transform 0.5s;
+		transform: scaleX(0);
+		transform-origin: right;
+	}
+
+	.linkAni:hover::after {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+	
 }

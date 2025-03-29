@@ -1,4 +1,3 @@
-import React from 'react';
 import { Element } from 'react-scroll';
 import PortfolioCard from './PortfolioCard';
 import elementImg from '../../assets/img/hero/hero-element-1.png';
@@ -11,7 +10,7 @@ const projects = [
 		title: 'Admin Dashboard',
 		description:
 			'Welcome to Admin Dashboard, your comprehensive administration tool designed to streamline the management of your businesss essential operations. Admin Dashboard is an advanced Admin Dashboard application tailored for E-commerce, Finance, Job Management, Analytics, Project Management, and various other sectors. It integrates seamlessly into your business ecosystem, offering a wide array of functionalities to enhance productivity, oversight, and the overall management experience.',
-		image: './assets/Admindashboard.webp',
+		image: './assets/AdminDashboard.webp',
 		imageAlt: 'Admin dashboard Screenshot',
 		tags: [
 			'React',
@@ -78,12 +77,14 @@ const projects = [
 	},
 ];
 
+// eslint-disable-next-line react/prop-types
 const Portfolio = ({ openModal, setOpenModal }) => {
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			transition={{ duration: 1, ease: [0.6, -0.05, 0.01, 0.99] }}
+			className='bg-primary-color-light py-4'
 		>
 			<Element
 				name='portfolio'
@@ -95,7 +96,15 @@ const Portfolio = ({ openModal, setOpenModal }) => {
 					alt=''
 					className='absolute bottom-0 right-0 md:bottom-1/2'
 				/>
-				<h2 className='text-3xl font-semibold lg:text-4xl text-white mb-8'>
+				<h2
+					className='text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 font-poppins'
+					style={{
+						background: 'linear-gradient(to right, #8750f7 0%, #fff 100%)',
+						WebkitBackgroundClip: 'text',
+						backgroundClip: 'text',
+						color: 'transparent',
+					}}
+				>
 					Portfolio
 				</h2>
 				<div className='wrapper relative flex justify-between items-center flex-col w-full pt-3 pb-12 gap-3'>
