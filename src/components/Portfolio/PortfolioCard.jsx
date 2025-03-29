@@ -1,11 +1,10 @@
-import React from 'react';
 import { TbHandClick } from 'react-icons/tb';
 
 const PortfolioCard = ({ project, setOpenModal }) => {
 	return (
 		<div
 			onClick={() => setOpenModal({ state: true, project: project })}
-			className='w-80 lg:w-96 h-auto bg-[#15172b] cursor-pointer rounded-xl shadow-md overflow-hidden py-5 px-4 flex flex-col gap-4 transition-all duration-500 ease-in-out hover:-translate-y-4 hover:shadow-2xl hover:brightness-110 relative'
+			className='w-80 lg:w-96 h-auto bg-seondary-color cursor-pointer rounded-xl shadow-md overflow-hidden py-5 px-4 flex flex-col gap-4 transition-all duration-500 ease-in-out hover:-translate-y-4 hover:shadow-2xl hover:brightness-110 relative'
 		>
 			<TbHandClick className='text-white text-3xl absolute top-6 right-6 z-20' />
 
@@ -18,7 +17,7 @@ const PortfolioCard = ({ project, setOpenModal }) => {
 				{project.tags?.map((tag, index) => (
 					<span
 						key={index}
-						className='tag text-xs font-normal  bg-[#434a94] text-stone-400 bg-opacity-50 py-1 px-2 rounded-xl'
+						className='tag text-xs font-normal  bg-primary-color-2  text-gray-300 bg-opacity-50 py-1 px-2 rounded-xl'
 					>
 						{tag}
 					</span>
@@ -38,7 +37,7 @@ const PortfolioCard = ({ project, setOpenModal }) => {
 						In progress
 					</span>
 				)}
-				<p className='description text-slate-500 text-sm max-w-full line-clamp-3 box-orient-vertical'>
+				<p className='description text-slate-400 text-sm max-w-full line-clamp-3 box-orient-vertical'>
 					{project.description}
 				</p>
 			</div>

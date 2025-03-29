@@ -1,5 +1,3 @@
-import React from 'react';
-
 const HeroBgAnimation = () => {
 	return (
 		<div className='w-[600px] h-[500px]'>

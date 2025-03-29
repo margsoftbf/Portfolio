@@ -3,7 +3,7 @@
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Sora', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -11,6 +11,6 @@
 	background: white;
 }
 ::-webkit-scrollbar-thumb {
-	background: #ffc576;
+	background: #8750f7;
 	border-radius: 0.5rem;
 }

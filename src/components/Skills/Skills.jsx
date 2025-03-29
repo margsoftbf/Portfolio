@@ -1,41 +1,34 @@
-import React from 'react';
 import { Element } from 'react-scroll';
-import htmlIcon from '../../assets/img/skills/html.png';
-import cssIcon from '../../assets/img/skills/css.png';
 import reactIcon from '../../assets/img/skills/react.png';
 import javascriptIcon from '../../assets/img/skills/javascript.png';
 import typescriptIcon from '../../assets/img/skills/typescript.png';
 import nextjsIcon from '../../assets/img/skills/nextjs.png';
 import sassIcon from '../../assets/img/skills/sass.png';
 import tailwindIcon from '../../assets/img/skills/tailwind.png';
-import materialIcon from '../../assets/img/skills/material-ui.png';
-import webpackIcon from '../../assets/img/skills/webpack.png';
-import viteIcon from '../../assets/img/skills/vite.png';
-import affinityIcon from '../../assets/img/skills/affinity.png';
-import photoshopIcon from '../../assets/img/skills/photoshop.png';
 import figmaIcon from '../../assets/img/skills/figma.png';
 import gitIcon from '../../assets/img/skills/git.png';
-import mongodbIcon from '../../assets/img/skills/mongodb.png';
 import nodejsIcon from '../../assets/img/skills/nodejs.png';
-import firebaseIcon from '../../assets/img/skills/firebase.png';
 import postmanIcon from '../../assets/img/skills/postman.png';
 import nestjsIcon from '../../assets/img/skills/nestjs.png';
 import postgresIcon from '../../assets/img/skills/postgres.png';
+import otherIcon from '../../assets/img/skills/other.png';
+import typeormIcon from '../../assets/img/skills/typeorm.png';
+import dockerIcon from '../../assets/img/skills/docker.png';
 
 import { motion } from 'framer-motion';
 
 const skills = [
 	{
 		id: 1,
-		name: 'HTML',
-		src: htmlIcon,
-		alt: 'html icon',
+		name: 'Javascript',
+		src: javascriptIcon,
+		alt: 'javascript icon',
 	},
 	{
 		id: 2,
-		name: 'CSS',
-		src: cssIcon,
-		alt: 'css icon',
+		name: 'Typescript',
+		src: typescriptIcon,
+		alt: 'typescript icon',
 	},
 	{
 		id: 3,
@@ -45,112 +38,88 @@ const skills = [
 	},
 	{
 		id: 4,
-		name: 'Javascript',
-		src: javascriptIcon,
-		alt: 'javascript icon',
-	},
-	{
-		id: 5,
-		name: 'Typescript',
-		src: typescriptIcon,
-		alt: 'typescript icon',
-	},
-	{
-		id: 6,
 		name: 'Next.js',
 		src: nextjsIcon,
 		alt: 'nextjs icon',
 	},
 	{
-		id: 7,
+		id: 5,
+		name: 'SASS',
+		src: sassIcon,
+		alt: 'sass icon',
+	},
+	{
+		id: 6,
+		name: 'Tailwind',
+		src: tailwindIcon,
+		alt: 'tailwind icon',
+	},
+	{
+		id: 10,
+		name: 'Nodejs',
+		src: nodejsIcon,
+		alt: 'node js icon',
+	},
+	{
+		id: 11,
 		name: 'Nest.js',
 		src: nestjsIcon,
 		alt: 'nestjs icon',
 	},
 	{
-		id: 8,
+		id: 12,
 		name: 'Postgres',
 		src: postgresIcon,
 		alt: 'postgres icon',
 	},
 	{
-		id: 9,
+		id: 13,
+		name: 'TypeORM',
+		src: typeormIcon,
+		alt: 'type orm icon',
+	},
+	{
+		id: 14,
+		name: 'REST Api',
+		src: otherIcon,
+		alt: 'rest api icon',
+	},
+	{
+		id: 15,
+		name: 'JWT/OAuth',
+		src: otherIcon,
+		alt: 'JWT/OAuth icon',
+	},
+	{
+		id: 16,
+		name: 'E2E Test',
+		src: otherIcon,
+		alt: 'e2e test icon',
+	},
+	{
+		id: 17,
 		name: 'Postman',
 		src: postmanIcon,
 		alt: 'postman icon',
 	},
 	{
 		id: 20,
-		name: 'Nodejs',
-		src: nodejsIcon,
-		alt: 'node js icon',
+		name: 'Docker',
+		src: dockerIcon,
+		alt: 'docker icon',
 	},
 	{
-		id: 10,
-		name: 'SASS',
-		src: sassIcon,
-		alt: 'sass icon',
-	},
-	{
-		id: 11,
-		name: 'Tailwind',
-		src: tailwindIcon,
-		alt: 'tailwind icon',
-	},
-	{
-		id: 12,
-		name: 'Material UI',
-		src: materialIcon,
-		alt: 'material ui icon',
-	},
-	{
-		id: 13,
-		name: 'Webpack',
-		src: webpackIcon,
-		alt: 'webpack icon',
-	},
-	{
-		id: 14,
-		name: 'Vite',
-		src: viteIcon,
-		alt: 'vite icon',
-	},
-	{
-		id: 15,
-		name: 'Affinity Photo',
-		src: affinityIcon,
-		alt: 'affinity photo icon',
-	},
-	{
-		id: 16,
-		name: 'Photoshop',
-		src: photoshopIcon,
-		alt: 'adobe photoshop icon',
-	},
-	{
-		id: 17,
+		id: 21,
 		name: 'Figma',
 		src: figmaIcon,
 		alt: 'figma icon',
 	},
 	{
-		id: 18,
+		id: 22,
 		name: 'Git',
 		src: gitIcon,
 		alt: 'git icon',
 	},
-	// {
-	// 	id: 19,
-	// 	name: 'MongoDB',
-	// 	src: mongodbIcon,
-	// 	alt: 'mongodb icon',
-	// },
-	// {
-	// 	id: 21,
-	// 	name: 'Firebase',
-	// 	src: firebaseIcon,
-	// 	alt: 'firebase icon',
-	// },
 ];
 
 const Skills = () => {
@@ -160,16 +129,37 @@ const Skills = () => {
 			animate={{ opacity: 1 }}
 			transition={{ duration: 1, ease: [0.6, -0.05, 0.01, 0.99] }}
 		>
-			<Element name='skills' className='max-w-[1280px] m-auto relative'>
-				<h2 className='text-3xl font-semibold lg:text-4xl'>Skills</h2>
-				<div className='flex justify-center flex-wrap mx-4 z-20 mt-4 p-8'>
+			<Element name='skills' className='max-w-[1280px] m-auto relative py-6'>
+				<div className='text-center flex flex-col items-center mb-10'>
+					<h2
+						className='text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 font-poppins'
+						style={{
+							background: 'linear-gradient(to right, #8750f7 0%, #fff 100%)',
+							WebkitBackgroundClip: 'text',
+							backgroundClip: 'text',
+							color: 'transparent',
+						}}
+					>
+						My Skills
+					</h2>
+				</div>
+
+				<div className='flex flex-wrap items-center justify-center gap-8 px-4 mb-6'>
 					{skills.map((skill) => (
-						<div
-							key={skill.id}
-							className="relative flex flex-row items-center top-0 w-44 h-10 m-2 rounded-md bg-[#313552] cursor-pointer before:content-[''] before:absolute before:left-9 before:w-[2px] before:h-[50%] before:bg-lightOrange/10 before:bg-opacity-50 transition-all duration-300 ease-in-out hover:-top-1 hover:shadow-myShadow hover:duration-300  "
-						>
-							<img src={skill.src} alt={skill.alt} className='mx-2 w-6 h-6' />
-							<p className='ml-1'>{skill.name}</p>
+						<div key={skill.id} className='w-full max-w-[140px] group fadeInUp'>
+							<div className='flex flex-col items-center p-6 rounded-2xl bg-[#140c1c] group-hover:bg-gradient-to-br group-hover:from-[#2a1454] group-hover:to-[#140c1c] border border-transparent group-hover:border-[#8750f7] transition-all duration-500 mb-3'>
+								<div className='w-16 flex flex-col justify-center items-center'>
+									<img
+										className='grayscale-[90%] group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110 opacity-50 group-hover:opacity-100 w-16'
+										src={skill.src}
+										alt={skill.alt}
+									/>
+								</div>
+								<div className='text-xl text-gray-400 group-hover:text-[#8750f7] transition-all duration-300 font-extrabold'>
+									{skill.proficiency}
+								</div>
+							</div>
+							<p className='text-center text-[#8750f7]'>{skill.name}</p>
 						</div>
 					))}
 				</div>

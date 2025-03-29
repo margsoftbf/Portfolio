@@ -2,7 +2,6 @@ import { CloseRounded } from '@mui/icons-material';
 import { CgWebsite } from 'react-icons/cg';
 import { FaGithub } from 'react-icons/fa';
 import { Modal } from '@mui/material';
-import React from 'react';
 
 const PortfolioDetails = ({ openModal, setOpenModal }) => {
 	const project = openModal?.project;
@@ -45,7 +44,6 @@ const PortfolioDetails = ({ openModal, setOpenModal }) => {
 					</p>
 					<div className='buttonGroup flex flex-col md:flex-row justify-end gap-3 mt-6 mb-3'>
 						<a
-							dull
 							href={project?.github}
 							target='new'
 							className='flex relative items-center text-center rounded-md bg-indigo-500 w-full px-8 py-2.5 text-md font-semibold border-2 border-indigo-800 text-white shadow-sm hover:text-white hover:border-2 hover:border-white hover:bg-lightNavy focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 transition duration-300 ease-in-out hover:duration-300'
