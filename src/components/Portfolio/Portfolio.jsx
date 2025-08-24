@@ -7,6 +7,38 @@ import { motion } from 'framer-motion';
 const projects = [
 	{
 		id: 1,
+		title: 'Real Estate Platform (Fullstack App)',
+		description:
+			'Advanced Real Estate Platform featuring comprehensive property management, AI-powered property descriptions, and modern user experience. Built with cutting-edge technologies including Next.js 15, TypeScript, and PostgreSQL database. Features include user authentication, property listings, advanced filtering, AI integration for property descriptions, comprehensive testing suite, and modern responsive design.',
+		image: './assets/RealEstate.png',
+		imageAlt: 'Real Estate Platform Screenshot',
+		tags: [
+			'Next.js 15',
+			'TypeScript',
+			'Tailwind CSS v4',
+			'TanStack Query',
+			'Framer Motion',
+			'React Hook Form',
+			'NestJS',
+			'PostgreSQL',
+			'TypeORM',
+			'JWT',
+			'Google Gemini API',
+			'Zod',
+			'Jest',
+			'React Testing Library',
+			'Docker',
+			'GitHub Actions',
+			'Vercel',
+			'Supabase',
+		],
+		category: 'web app',
+		finished: true,
+		github: 'https://github.com/margsoftbf/real-estate',
+		webapp: 'https://real-estate.marcingarski.com/',
+	},
+	{
+		id: 2,
 		title: 'Admin Dashboard',
 		description:
 			'Welcome to Admin Dashboard, your comprehensive administration tool designed to streamline the management of your businesss essential operations. Admin Dashboard is an advanced Admin Dashboard application tailored for E-commerce, Finance, Job Management, Analytics, Project Management, and various other sectors. It integrates seamlessly into your business ecosystem, offering a wide array of functionalities to enhance productivity, oversight, and the overall management experience.',
@@ -29,7 +61,7 @@ const projects = [
 		webapp: 'https://admin.marcingarski.com/',
 	},
 	{
-		id: 2,
+		id: 3,
 		title: 'Travelo - Travel & Trip',
 		description:
 			'Welcome to Travelo, a state-of-the-art travel platform that operates similarly to TripAdvisor. Our application is designed to revolutionize the way you search for vacations, adventures, restaurants, and hotels in the worlds 50 most popular cities. With Travelo, you can effortlessly book your dream vacation or explore exciting new activities.',
@@ -53,7 +85,7 @@ const projects = [
 		webapp: 'https://travelo.marcingarski.com/',
 	},
 	{
-		id: 3,
+		id: 4,
 		title: 'Fusion Feast Restaurant',
 		description:
 			'Welcome to Fusion Feast, a contemporary dining experience that combines traditional flavors with a modern twist. Our restaurant offers a unique menu that lets you customize your favorite dishes like pizzas, burgers, and more. Enjoy a seamless ordering and dining experience with our state-of-the-art digital platform.',
@@ -108,7 +140,7 @@ const Portfolio = ({ openModal, setOpenModal }) => {
 					Portfolio
 				</h2>
 				<div className='wrapper relative flex justify-between items-center flex-col w-full pt-3 pb-12 gap-3'>
-					<div className='cardContainer flex justify-center items-center flex-wrap gap-7'>
+					<div className='cardContainer grid grid-cols-1 lg:grid-cols-2 gap-7 justify-items-center'>
 						{projects.map((project) => (
 							<PortfolioCard
 								key={project.id}
