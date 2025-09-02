@@ -20,6 +20,10 @@ import {
 	SiSupabase,
 	SiAmazonaws,
 	SiGithubactions,
+	// SiRedis,
+	// SiKubernetes,
+	// SiGraphql,
+	// SiTensorflow,
 } from 'react-icons/si';
 import { FaKey, FaServer, FaVial, FaRobot } from 'react-icons/fa';
 import { MdStorage, MdQueryStats } from 'react-icons/md';
@@ -125,6 +129,16 @@ const skills = [
 		icon: <SiDocker className='w-8 h-8' />,
 		color: 'text-blue-400',
 	},
+	// {
+	// 	name: 'Kubernetes',
+	// 	icon: <SiKubernetes className='w-8 h-8' />,
+	// 	color: 'text-blue-400',
+	// },
+	// {
+	// 	name: 'GraphQL',
+	// 	icon: <SiGraphql className='w-8 h-8' />,
+	// 	color: 'text-pink-400',
+	// },
 	{
 		name: 'Jest',
 		icon: <SiJest className='w-8 h-8' />,
@@ -145,11 +159,21 @@ const skills = [
 		icon: <FaRobot className='w-8 h-8' />,
 		color: 'text-purple-500',
 	},
+	// {
+	// 	'Tensorflow',
+	// 	icon: <SiTensorflow className='w-8 h-8' />,
+	// 	color: 'text-red-500',
+	// },
 	{
 		name: 'TanStack Query',
 		icon: <MdQueryStats className='w-8 h-8' />,
 		color: 'text-orange-500',
 	},
+	// {
+	// 	name: 'Redis',
+	// 	icon: <SiRedis className='w-8 h-8' />,
+	// 	color: 'text-red-500',
+	// }
 ];
 
 const Skills = () => {
@@ -160,7 +184,10 @@ const Skills = () => {
 			transition={{ duration: 1, ease: [0.6, -0.05, 0.01, 0.99] }}
 		>
 			<Element name='skills' className='py-20'>
-				<div className='container mx-auto px-4'>
+				<div className='absolute top-20 left-10 w-20 h-20 bg-primary-color/20 rounded-full blur-xl' />
+				<div className='absolute bottom-20 right-10 w-32 h-32 bg-seondary-color/20 rounded-full blur-xl' />
+				<div className='absolute top-24 right-1/4 w-16 h-16 bg-primary-color/50 rounded-full blur-lg' />
+				<div className='container mx-auto px-4 relative'>
 					<div className='max-w-6xl mx-auto'>
 						<div className='text-center flex flex-col items-center mb-16'>
 							<h2 className='text-4xl md:text-5xl font-bold font-sans mb-4 text-white'>

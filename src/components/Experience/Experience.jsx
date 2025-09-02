@@ -58,20 +58,13 @@ const Experience = () => {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			transition={{ duration: 1, ease: [0.6, -0.05, 0.01, 0.99] }}
+			className='bg-[#091219]'
 		>
 			<Element
 				name='experience'
 				className='mt-6 flex flex-col w-full max-w-[1280px] py-6 m-auto z-20'
 			>
-				<h2
-					className='text-3xl md:text-4xl lg:text-5xl font-semibold mb-12 font-poppins'
-					style={{
-						background: 'linear-gradient(to right, #8750f7 0%, #fff 100%)',
-						WebkitBackgroundClip: 'text',
-						backgroundClip: 'text',
-						color: 'transparent',
-					}}
-				>
+				<h2 className='text-3xl md:text-4xl lg:text-5xl font-semibold mb-12 font-poppins'>
 					My Resume
 				</h2>
 				<div className='flex flex-col gap-4 md:flex-row z-20'>
