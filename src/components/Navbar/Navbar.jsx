@@ -9,6 +9,15 @@ import headerLogo from '../../assets/img/logo/logo-5.png';
 import { ArrowRight } from 'lucide-react';
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const [isScrolled, setIsScrolled] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsScrolled(window.scrollY > 50);
+		};
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
 
 	useEffect(() => {
 		if (isOpen) {
@@ -21,19 +30,22 @@ const Navbar = () => {
 		};
 	}, [isOpen]);
 	return (
-		<motion.div
-			className='h-24 w-full flex items-center justify-center top-0 z-50 font-sora text-white'
+		<motion.header
+			className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-sora text-white ${
+				isScrolled ? 'bg-black/80 backdrop-blur-md border-b border-gray-800' : 'bg-transparent'
+			}`}
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			transition={{ duration: 1, ease: [0.6, -0.05, 0.01, 0.99] }}
 		>
+		<div className='h-20 w-full flex items-center justify-center'>
 			<div className='flex justify-between items-center w-full mx-4 max-w-[1280px] m-auto'>
 				<div>
 					<ul className='flex items-center gap-4'>
 						<li>
 							<Link to='/' className='logo'>
 								<img
-									className='w-15 h-15 inline-block'
+									className='w-10 h-10 inline-block'
 									src={headerLogo}
 									alt=''
 								/>
@@ -49,7 +61,7 @@ const Navbar = () => {
 						</li>
 					</ul>
 				</div>
-				<div className='block absolute top-5 right-0 cursor-pointer -translate-x-full translate-y-1/2 text-white text-2xl lg:hidden z-50'>
+				<div className='block absolute top-4 right-0 cursor-pointer -translate-x-full translate-y-1/2 text-white text-2xl lg:hidden z-50'>
 					{isOpen ? (
 						<FaXmark
 							onClick={() => {
@@ -117,7 +129,7 @@ const Navbar = () => {
 						<li className='hidden lg:block z-30'>
 							<a
 								href='https://github.com/margsoftbf'
-								className='w-full px-6 py-2 rounded-full bg-gradient-to-r from-purple-700 to-indigo-900 hover:from-purple-800 hover:to-indigo-950 text-white font-semibold cursor-pointer flex items-center justify-center gap-2 group'
+								className='w-full px-6 py-2 rounded-full bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white font-semibold cursor-pointer flex items-center justify-center gap-2 group'
 								onClick={() => setIsOpen(false)}
 								target='_blank'
 								rel='noopener noreferrer'
@@ -193,9 +205,11 @@ const Navbar = () => {
 								<div className='w-24 h-px bg-white/20'></div>
 
 								<a
-									href='#'
-									className='mt-4 px-8 py-3 rounded-full bg-gradient-primary text-white'
+									href='https://github.com/margsoftbf'
+									className='mt-4 px-8 py-3 rounded-full bg-gradient-to-r from-blue-600 to-blue-800 text-white'
 									onClick={() => setIsOpen(false)}
+									target='_blank'
+									rel='noopener noreferrer'
 								>
 									Github Profile!
 								</a>
@@ -204,7 +218,8 @@ const Navbar = () => {
 					)}
 				</AnimatePresence>
 			</div>
-		</motion.div>
+		</div>
+		</motion.header>
 	);
 };
 

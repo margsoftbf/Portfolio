@@ -109,7 +109,6 @@ const projects = [
 	},
 ];
 
-// eslint-disable-next-line react/prop-types
 const Portfolio = ({ openModal, setOpenModal }) => {
 	return (
 		<motion.div
