@@ -146,7 +146,7 @@ const projects = [
 const Portfolio = () => {
 	return (
 		<div className="bg-[#091219] text-white">
-			<section id="projects" className="py-20 bg-gray-800/20">
+			<section id="portfolio" className="py-20 bg-gray-800/20">
 				<div className="container mx-auto px-4">
 					<div className="max-w-6xl mx-auto">
 						<h2 className="text-4xl font-bold font-sans mb-12 text-center">Projects</h2>
