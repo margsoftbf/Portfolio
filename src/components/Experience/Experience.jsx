@@ -1,5 +1,4 @@
-import React from 'react';
-import { Calendar, Building2, Code, Users, GraduationCap, Award, Phone, Cog } from 'lucide-react';
+import { Calendar, Building2, Code, GraduationCap, Phone, Cog } from 'lucide-react';
 
 const Card = ({ children, className }) => (
 	<div className={`border border-gray-700 bg-gray-800/50 backdrop-blur-sm rounded-xl ${className}`}>
@@ -40,7 +39,7 @@ const Experience = () => {
 	const experiences = [
 		{
 			title: "Fullstack Developer",
-			company: "MIG Construction & ConstrAcion App",
+			company: "MIG Construction & ConstrAction App",
 			period: "August 2024 – Present",
 			location: "Remote, Poland",
 			description: [
