@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 
-const primaryColor = '#8750f7';
-const primaryColor2 = '#9b8dff';
-const primaryColorLight = '#140c1c';
-const seondaryColor = '#2a1454';
+const primaryColor = '#3b82f6';
+const primaryColor2 = '#60a5fa';
+const primaryColorLight = '#1e3a8a';
+const seondaryColor = '#1d4ed8';
 const bodyColor = '#dddddd';
 const bodyColor2 = '#7A7A7A';
 const whiteColor = '#ffffff';
