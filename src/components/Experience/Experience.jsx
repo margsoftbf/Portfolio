@@ -1,136 +1,287 @@
-import { motion } from 'framer-motion';
-import { Element } from 'react-scroll';
-import { GraduationCap, BriefcaseBusiness } from 'lucide-react';
+import React from 'react';
+import { Calendar, Building2, Code, Users, GraduationCap, Award, Phone, Cog } from 'lucide-react';
 
-const experienceData = [
-	{
-		id: 1,
-		dateRange: 'Aug 2024  - Present',
-		workTitle: 'Junior Fullstack Developer',
-		where: 'Remote, Poland',
-		description: `Junior Fullstack Developer with experience in React, Next.js, Tailwind CSS, and E2E testing on frontend. Backend skills include Nest.js with PostgreSQL and AWS. Focused on building efficient, scalable web applications.`,
-	},
-	{
-		id: 2,
-		dateRange: 'Jun. 2019 - May 2024',
-		workTitle: 'E-commerce Specialist',
-		where: 'A&J Vacuum Services, Clifton, NJ',
-		description: `Manages and actively optimizes eCommerce operations to promote offerings for this vacuum service provider. Utilizes industry-best optimization techniques to bolster the website’s Google ranking.`,
-	},
-	{
-		id: 3,
-		dateRange: 'July 2015 - May 2019',
-		workTitle: 'Machine Operator',
-		where: 'Precision Custom Coatings, Totowa, NJ',
-		description:
-			'Operated advanced machinery for custom coating applications. Responsible for system configuration, quality control and routine maintenance. Followed precise technical specifications while ensuring safe operation procedures.',
-	},
-	{
-		id: 4,
-		dateRange: 'Aug. 2012 - May 2015',
-		workTitle: 'Call Center Operator',
-		where: 'Solid Security, Katowice, Poland',
-		description:
-			'Managed outbound client communications for alarm system activations. Provided first-level technical support and troubleshooting over the phone. Coordinated with field service teams to resolve complex security system issues.',
-	},
-];
-const schoolData = [
-	{
-		id: 1,
-		dateRange: '2022 - present',
-		title: 'Web Development Studies',
-		where: 'Online programs',
-		description:
-			'Continually expands technical knowledge in Web Development through online programs.',
-	},
-	{
-		id: 2,
-		dateRange: '2008 - 2012',
-		title: 'High School Diploma',
-		where: 'Katowice, Poland',
-		description:
-			'IT Technician Designation, Programming, Specialization in Graphics',
-	},
-];
-const Experience = () => {
+const Card = ({ children, className }) => (
+	<div className={`border border-gray-700 bg-gray-800/50 backdrop-blur-sm rounded-xl ${className}`}>
+		{children}
+	</div>
+);
+
+const CardContent = ({ children }) => (
+	<div className="p-6">{children}</div>
+);
+
+const CardHeader = ({ children }) => (
+	<div className="px-6 pt-6">{children}</div>
+);
+
+const CardTitle = ({ children, className }) => (
+	<h3 className={`text-xl font-bold ${className}`}>{children}</h3>
+);
+
+const CardDescription = ({ children, className }) => (
+	<p className={`text-sm ${className}`}>{children}</p>
+);
+
+const Badge = ({ children, variant = "default", className }) => {
+	const baseClass = "inline-flex items-center px-2.5 py-0.5 rounded-lg text-xs font-medium";
+	const variantClass = variant === "secondary" 
+		? "bg-gray-700 text-gray-300" 
+		: "bg-blue-600 text-blue-100";
+	
 	return (
-		<motion.div
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			transition={{ duration: 1, ease: [0.6, -0.05, 0.01, 0.99] }}
-			className='bg-[#091219]'
-		>
-			<Element
-				name='experience'
-				className='mt-6 flex flex-col w-full max-w-[1280px] py-6 m-auto z-20'
-			>
-				<h2 className='text-3xl md:text-4xl lg:text-5xl font-semibold mb-12 font-poppins'>
-					My Resume
-				</h2>
-				<div className='flex flex-col gap-4 md:flex-row z-20'>
-					<div className='timeline-box w-full relative pb-4 md:w-1/2'>
-						{experienceData.map((item) => (
-							<div key={item.id} className='relative text-left flex gap-3 mb-4'>
-								<div className="before:content-[''] before:w-[2px] before:absolute before:h-64 sm:before:h-48 md:before:h-[118px] before:top-12 md:before:top-[70px] before:left-8 md:before:left-11 before:bg-primary-color-2 mb-4"></div>
-								<div className='w-1/8'>
-									<div className='flex items-center justify-center w-10 h-10 md:w-16 md:h-16 bg-seondary-color rounded-full z-30'>
-										<BriefcaseBusiness
-											className='text-white-color md:w-8 md:h-8'
-											size={24}
-											strokeWidth={1.5}
-										/>
-									</div>
-								</div>
-								<div className='bg-seondary-color transition-all duration-300- p-4 rounded-xl w-full'>
-									<h3 className='text-sm font-medium text-slate-400'>
-										{item.dateRange}
-									</h3>
-									<h3 className='mt-2 font-semibold text-white'>
-										{item.workTitle}
-									</h3>
-									<p className='my-3 text-sm sm:text-base text-slate-400'>
-										{item.where}
-									</p>
-									<p className='text-sm w-full text-slate-300'>
-										{item.description}
-									</p>
-								</div>
-							</div>
-						))}
-					</div>
-					<div className='timeline-box w-full relative pb-4 md:w-1/2 md:ml-4'>
-						{schoolData.map((item) => (
-							<div key={item.id} className='relative text-left flex gap-3 mb-4'>
-								<div className="before:content-[''] before:w-[2px] before:absolute before:h-32 sm:before:h-32 md:before:h-20 before:top-12 md:before:top-[70px] before:left-8 md:before:left-11 before:bg-primary-color-2 mb-4"></div>
-								<div className='w-1/8'>
-									<div className='flex items-center justify-center w-10 h-10 md:w-16 md:h-16 bg-seondary-color rounded-full z-30'>
-										<GraduationCap
-											className='text-white-color md:w-8 md:h-8'
-											size={24}
-											strokeWidth={1.5}
-										/>
-									</div>
-								</div>
-								<div className='bg-seondary-color transition-all duration-300- p-4 rounded-xl w-full'>
-									<h3 className='text-sm font-medium text-slate-400'>
-										{item.dateRange}
-									</h3>
-									<h3 className='mt-2 font-semibold text-white'>
-										{item.title}
-									</h3>
-									<p className='my-3 text-sm sm:text-base text-slate-400'>
-										{item.where}
-									</p>
-									<p className='text-sm w-full text-slate-300'>
-										{item.description}
-									</p>
-								</div>
-							</div>
-						))}
+		<span className={`${baseClass} ${variantClass} ${className}`}>
+			{children}
+		</span>
+	);
+};
+
+const Experience = () => {
+	const experiences = [
+		{
+			title: "Fullstack Developer",
+			company: "MIG Construction & ConstrAcion App",
+			period: "August 2024 – Present",
+			location: "Remote, Poland",
+			description: [
+				"Developing and maintaining web applications using React, Typescript, Next.js and Tailwind on the frontend",
+				"Building scalable and secure APIs with Nest.js and Postgres for backend services, implementing database operations with TypeORM including filtering, sorting and custom queries",
+				"Managing AWS cloud infrastructure including Cognito authentication, Lambda functions, App runner deployment, Amplify hosting, S3 storage, and SES email services",
+				"Collaborating in a cross-functional team to implement fullstack solutions, ensuring responsiveness, performance, and a seamless user experience",
+				"Handling database management and optimizations for improved system efficiency",
+				"Integrating third-party services and managing cloud infrastructure",
+				"Integrating AI/LLM solutions for enhanced application functionality and user experience",
+				"Writing comprehensive End-to-End tests for backend services and monitoring application errors through Sentry.io",
+				"Leading full-cycle feature development from database design through API creation to frontend implementation and user deploy"
+			],
+			skills: [
+				"React",
+				"TypeScript",
+				"Next.js",
+				"Nest.js",
+				"PostgreSQL",
+				"TypeORM",
+				"AWS",
+				"Cognito",
+				"Lambda",
+				"S3",
+				"AI/LLM",
+				"Jest",
+				"Sentry.io",
+			],
+			technologies: ["React", "Next.js", "Node.js", "PostgreSQL", "AWS"],
+			icon: Code,
+		},
+		{
+			title: "E-commerce Specialist",
+			company: "A&J Vacuum Services Inc.",
+			period: "June 2019 – May 2024",
+			location: "Clifton, NJ, United States",
+			description: [
+				"Optimized daily e-commerce operations, including content creation, SEO, and product listings",
+				"Enhanced Google ranking and user engagement through best practices in content strategy and analytics",
+				"Collaborated with teams to ensure updated content across the platform, monitoring product performance"
+			],
+			skills: ["SEO", "Content Creation", "E-commerce", "Analytics", "Product Management"],
+			technologies: ["SEO", "Analytics", "Content Management", "E-commerce"],
+			icon: Building2,
+		},
+		{
+			title: "Machine Operator",
+			company: "Precision Custom Coatings",
+			period: "July 2015 - May 2019",
+			location: "Totowa, NJ, United States",
+			description: [
+				"Operated and maintained custom coating machinery, ensuring quality control and customer satisfaction",
+				"Adjusted process within specifications, maintaining work area in accordance with all applicable safety and environmental policies"
+			],
+			skills: ["Quality Control", "Machine Operation", "Safety Protocols", "Process Optimization"],
+			technologies: ["Manufacturing", "Quality Control", "Process Management"],
+			icon: Cog,
+		},
+		{
+			title: "Call Center Operator",
+			company: "Solid Security",
+			period: "August 2012 - May 2015",
+			location: "Katowice, Poland",
+			description: [
+				"Managed all outbound calls for customers to inform alarm activation instances as reported by Solid Security's managed services",
+				"Handled customer inquiries, offering solutions and maintaining high service standards"
+			],
+			skills: ["Customer Service", "Technical Support", "Communication", "Problem Solving"],
+			technologies: ["Customer Support", "Communication Systems", "Security Systems"],
+			icon: Phone,
+		},
+	];
+
+	const education = [
+		{
+			title: 'Web Development Studies',
+			institution: 'Online Education',
+			period: '2022 - Present',
+			type: 'Education',
+			description: [
+				'Completed comprehensive React and Next.js courses by Maximilian Schwarzmuller',
+				'Node.js and backend development training by Maximilian Schwarzmuller',
+				'Frontend development training through MMC School',
+				'Continually expands technical knowledge in Web Development through online programs'
+			],
+			skills: ['Web Development', 'Frontend', 'Backend', 'Full Stack'],
+			icon: <GraduationCap className='w-5 h-5' />,
+		},
+		{
+			title: 'High School Diploma',
+			institution: 'Katowice, Poland',
+			period: 'May 2012',
+			type: 'Education',
+			description: [
+				'Specialization: IT Technician, Designation, Specialization in Graphics'
+			],
+			skills: [
+				'IT Technician',
+				'Graphics Design',
+				'Computer Science',
+				'Programming',
+			],
+			icon: <GraduationCap className='w-5 h-5' />,
+		},
+	];
+
+	return (
+		<div className="bg-[#091219] text-white">
+			{/* Experience Section */}
+			<section id="experience" className="py-20">
+				<div className="container mx-auto px-4">
+					<div className="max-w-4xl mx-auto">
+						<h2 className="text-4xl font-bold font-sans mb-12 text-center">Experience</h2>
+
+						<div className="space-y-6">
+							{experiences.map((exp, index) => {
+								const IconComponent = exp.icon
+								return (
+									<Card key={index} className="border-gray-700 bg-gray-800/50 hover:bg-gray-800/70 transition-colors">
+										<CardHeader>
+											<div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+												<div className="flex items-start gap-4 md:gap-6">
+													<div className="p-3 bg-blue-500/10 rounded-lg mt-1">
+														<IconComponent className="w-6 h-6 text-blue-400" />
+													</div>
+													<div className="text-left">
+														<CardTitle className="font-sans text-xl text-white">{exp.title}</CardTitle>
+														<CardDescription className="text-blue-400 font-mono font-medium">{exp.company}</CardDescription>
+														{exp.location && (
+															<p className="text-gray-400 text-sm font-mono">{exp.location}</p>
+														)}
+													</div>
+												</div>
+												<div className="flex items-center text-gray-400 font-mono text-sm md:mt-1">
+													<Calendar size={16} className="mr-2" />
+													{exp.period}
+												</div>
+											</div>
+										</CardHeader>
+
+										<CardContent>
+											<div className="mb-4 text-left">
+												<ul className="text-gray-400 font-mono text-sm leading-relaxed space-y-2 list-none">
+													{exp.description.map((item, idx) => (
+														<li key={idx} className="flex items-start text-left">
+															<span className="text-blue-400 mr-3 mt-1 flex-shrink-0">•</span>
+															<span className="text-left">{item}</span>
+														</li>
+													))}
+												</ul>
+											</div>
+
+											<div className="text-left">
+												<h4 className="text-sm font-semibold text-white mb-3">Key Skills & Technologies:</h4>
+												<div className="flex flex-wrap gap-2">
+													{exp.skills.map((skill) => (
+														<Badge key={skill} variant="secondary" className="bg-gray-700 text-xs">
+															{skill}
+														</Badge>
+													))}
+												</div>
+											</div>
+										</CardContent>
+									</Card>
+								)
+							})}
+						</div>
 					</div>
 				</div>
-			</Element>
-		</motion.div>
+			</section>
+
+			{/* Education Section */}
+			<section id="education" className="py-20">
+				<div className="container mx-auto px-4">
+					<div className="max-w-4xl mx-auto">
+						<h2 className="text-4xl font-bold font-sans mb-12 text-center">
+							Education & Certificates
+						</h2>
+
+						<div className="space-y-6">
+							{education.map((edu, index) => (
+								<Card
+									key={index}
+									className="border-gray-700 bg-gray-800/50 hover:bg-gray-800/70 transition-colors"
+								>
+									<CardHeader>
+										<div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+											<div className="flex items-start gap-4 md:gap-6">
+												<div className="p-3 bg-blue-500/10 rounded-lg mt-1">
+													<div className="text-blue-400">{edu.icon}</div>
+												</div>
+												<div className="text-left">
+													<CardTitle className="font-sans text-xl text-white">
+														{edu.title}
+													</CardTitle>
+													<CardDescription className="text-blue-400 font-mono font-medium">
+														{edu.institution}
+													</CardDescription>
+												</div>
+											</div>
+											<div className="flex items-center text-gray-400 font-mono text-sm md:mt-1">
+												<Calendar size={16} className="mr-2" />
+												{edu.period}
+											</div>
+										</div>
+									</CardHeader>
+
+									<CardContent>
+										<div className="mb-4 text-left">
+											<ul className="text-gray-400 font-mono text-sm leading-relaxed space-y-2 list-none">
+												{edu.description.map((item, idx) => (
+													<li key={idx} className="flex items-start text-left">
+														<span className="text-blue-400 mr-3 mt-1 flex-shrink-0">•</span>
+														<span className="text-left">{item}</span>
+													</li>
+												))}
+											</ul>
+										</div>
+
+										<div className="text-left">
+											<h4 className="text-sm font-semibold text-white mb-3">Skills:</h4>
+											<div className="flex flex-wrap gap-2">
+												{edu.skills.map((skill) => (
+													<Badge
+														key={skill}
+														variant="secondary"
+														className="bg-gray-700"
+													>
+														{skill}
+													</Badge>
+												))}
+											</div>
+										</div>
+									</CardContent>
+								</Card>
+							))}
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
 	);
 };
 
