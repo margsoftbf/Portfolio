@@ -29,7 +29,7 @@ const Hero = () => {
 				<div className='max-w-4xl mx-auto'>
 					<div className='mb-12 lg:mb-20 flex justify-center'>
 						<div className='relative'>
-							<div className='absolute inset-0 flex justify-center items-center w-[400px] h-[400px] -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 lg:top-2/3 -z-10'>
+							<div className='absolute inset-0 flex justify-center items-center w-[400px] h-[400px] -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 lg:top-1/3 -z-10 lg:w-[600px] lg:h-[600px]'>
 								<HeroBgAnimation />
 							</div>
 
