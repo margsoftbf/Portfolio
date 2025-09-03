@@ -68,7 +68,7 @@ const Hero = () => {
 
 					<div className='flex flex-col sm:flex-row gap-4 justify-center items-center mb-8'>
 						<a
-							href='/src/assets/files/Marcin-Garski-CV.pdf'
+							href='/assets/Resume/Marcin-Garski-CV.pdf'
 							target='_blank'
 							download='Marcin-Garski-CV.pdf'
 							className='border border-primary-color/50 hover:border-primary-color hover:bg-primary-color/10 transition-all duration-300 bg-transparent text-white text-sm px-6 py-3 rounded-lg font-semibold flex items-center gap-2'
