@@ -60,9 +60,9 @@ const Hero = () => {
 						</h2>
 					</div>
 					<p className='text-base  leading-6 text-gray-400  max-w-lg mx-auto text-center lg:my-2 px-4 md:px-2 xl:px-0 mb-6 md:mb-10 lg:mb-8'>
-						Lead Full Stack Developer with 2 years of commercial experience
-						building large production applications. I work across architecture,
-						backend services, queue-based processing and cloud infrastructure.
+						Full Stack Developer building and leading large production
+						applications. I work across architecture, backend services, queue
+						based processing and cloud infrastructure.
 					</p>
 
 					<div className='flex flex-col sm:flex-row gap-4 justify-center items-center mb-8'>
