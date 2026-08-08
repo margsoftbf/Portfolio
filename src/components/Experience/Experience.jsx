@@ -1,4 +1,4 @@
-import { Calendar, Code, GraduationCap } from 'lucide-react';
+import { Calendar, Building2, Code, GraduationCap, Phone, Cog } from 'lucide-react';
 
 const Card = ({ children, className }) => (
 	<div className={`border border-gray-700 bg-gray-800/50 backdrop-blur-sm rounded-xl ${className}`}>
@@ -100,6 +100,46 @@ const Experience = () => {
 			],
 			technologies: ["React", "Next.js", "NestJS", "PostgreSQL", "AWS"],
 			icon: Code,
+		},
+		{
+			title: "E-commerce Specialist",
+			company: "A&J Vacuum Services Inc.",
+			period: "June 2019 – May 2024",
+			location: "Clifton, NJ, United States",
+			description: [
+				"Optimized daily e-commerce operations, including content creation, SEO, and product listings",
+				"Enhanced Google ranking and user engagement through best practices in content strategy and analytics",
+				"Collaborated with teams to ensure updated content across the platform, monitoring product performance"
+			],
+			skills: ["SEO", "Content Creation", "E-commerce", "Analytics", "Product Management"],
+			technologies: ["SEO", "Analytics", "Content Management", "E-commerce"],
+			icon: Building2,
+		},
+		{
+			title: "Machine Operator",
+			company: "Precision Custom Coatings",
+			period: "July 2015 - May 2019",
+			location: "Totowa, NJ, United States",
+			description: [
+				"Operated and maintained custom coating machinery, ensuring quality control and customer satisfaction",
+				"Adjusted process within specifications, maintaining work area in accordance with all applicable safety and environmental policies"
+			],
+			skills: ["Quality Control", "Machine Operation", "Safety Protocols", "Process Optimization"],
+			technologies: ["Manufacturing", "Quality Control", "Process Management"],
+			icon: Cog,
+		},
+		{
+			title: "Call Center Operator",
+			company: "Solid Security",
+			period: "August 2012 - May 2015",
+			location: "Katowice, Poland",
+			description: [
+				"Managed all outbound calls for customers to inform alarm activation instances as reported by Solid Security's managed services",
+				"Handled customer inquiries, offering solutions and maintaining high service standards"
+			],
+			skills: ["Customer Service", "Technical Support", "Communication", "Problem Solving"],
+			technologies: ["Customer Support", "Communication Systems", "Security Systems"],
+			icon: Phone,
 		},
 	];
 
