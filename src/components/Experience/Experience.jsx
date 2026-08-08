@@ -1,4 +1,4 @@
-import { Calendar, Building2, Code, GraduationCap, Phone, Cog } from 'lucide-react';
+import { Calendar, Code, GraduationCap } from 'lucide-react';
 
 const Card = ({ children, className }) => (
 	<div className={`border border-gray-700 bg-gray-800/50 backdrop-blur-sm rounded-xl ${className}`}>
@@ -38,94 +38,77 @@ const Badge = ({ children, variant = "default", className }) => {
 const Experience = () => {
 	const experiences = [
 		{
-			title: "Fullstack Developer",
-			company: "MIG Construction & ConstrAction App",
-			period: "August 2024 – Present",
+			title: "Lead Full Stack Developer",
+			company: "Type Of Code",
+			period: "October 2025 – Present",
 			location: "Remote, Poland",
 			description: [
-				"Developing and maintaining web applications using React, Typescript, Next.js and Tailwind on the frontend",
-				"Building scalable and secure APIs with Nest.js and Postgres for backend services, implementing database operations with TypeORM including filtering, sorting and custom queries",
-				"Managing AWS cloud infrastructure including Cognito authentication, Lambda functions, App runner deployment, Amplify hosting, S3 storage, and SES email services",
-				"Collaborating in a cross-functional team to implement fullstack solutions, ensuring responsiveness, performance, and a seamless user experience",
-				"Handling database management and optimizations for improved system efficiency",
-				"Integrating third-party services and managing cloud infrastructure",
-				"Integrating AI/LLM solutions for enhanced application functionality and user experience",
-				"Writing comprehensive End-to-End tests for backend services and monitoring application errors through Sentry.io",
-				"Leading full-cycle feature development from database design through API creation to frontend implementation and user deploy"
+				"Leading technical delivery of large production applications: architecture decisions, planning, code review and features from requirement to production",
+				"Designing multi-tenant data models with organisation-level access control, roles and permissions across a wide domain schema",
+				"Building product features end to end, from data model and API through to the interface users work in every day",
+				"Designing background processing with BullMQ and Redis: queues, scheduled jobs and workers running in separate containers from the API",
+				"Optimizing MongoDB aggregations, indexing and GraphQL resolvers on large data sets",
+				"Building real-time features with live queries and subscriptions, keeping client state in sync with the database",
+				"Building and maintaining the Optima ERP integration synchronising products, stock levels, customers and orders between the platform and the ERP system",
+				"Integrating third-party platforms: payments, calendars and video conferencing",
+				"Running an internal QA platform that orchestrates Playwright end-to-end runs across projects, with role-based access and stored test artefacts",
+				"Managing applications on AWS: S3 storage, CloudFront delivery, IAM access and production monitoring",
+			],
+			skills: [
+				"TypeScript",
+				"NestJS",
+				"GraphQL",
+				"MongoDB",
+				"BullMQ",
+				"Redis",
+				"React",
+				"AWS",
+				"ERP Integration",
+				"Playwright",
+				"Docker",
+				"Sentry",
+			],
+			technologies: ["TypeScript", "NestJS", "GraphQL", "MongoDB", "BullMQ", "AWS"],
+			icon: Code,
+		},
+		{
+			title: "Full Stack Developer",
+			company: "MIG Construction",
+			period: "August 2024 – October 2025",
+			location: "Remote, Poland",
+			description: [
+				"Delivered features end to end, from database design through API to frontend and deployment",
+				"Built applications with React, Next.js and TypeScript on NestJS and PostgreSQL APIs",
+				"Managed AWS infrastructure: Cognito, Lambda, App Runner, Amplify, S3, SES and CloudWatch monitoring",
+				"Integrated AI and LLM capabilities into production features",
+				"Wrote end-to-end tests and monitored production errors with Sentry",
 			],
 			skills: [
 				"React",
 				"TypeScript",
 				"Next.js",
-				"Nest.js",
+				"NestJS",
 				"PostgreSQL",
 				"TypeORM",
 				"AWS",
-				"Cognito",
-				"Lambda",
-				"S3",
-				"AI/LLM",
 				"Jest",
-				"Sentry.io",
+				"Sentry",
 			],
-			technologies: ["React", "Next.js", "Node.js", "PostgreSQL", "AWS"],
+			technologies: ["React", "Next.js", "NestJS", "PostgreSQL", "AWS"],
 			icon: Code,
-		},
-		{
-			title: "E-commerce Specialist",
-			company: "A&J Vacuum Services Inc.",
-			period: "June 2019 – May 2024",
-			location: "Clifton, NJ, United States",
-			description: [
-				"Optimized daily e-commerce operations, including content creation, SEO, and product listings",
-				"Enhanced Google ranking and user engagement through best practices in content strategy and analytics",
-				"Collaborated with teams to ensure updated content across the platform, monitoring product performance"
-			],
-			skills: ["SEO", "Content Creation", "E-commerce", "Analytics", "Product Management"],
-			technologies: ["SEO", "Analytics", "Content Management", "E-commerce"],
-			icon: Building2,
-		},
-		{
-			title: "Machine Operator",
-			company: "Precision Custom Coatings",
-			period: "July 2015 - May 2019",
-			location: "Totowa, NJ, United States",
-			description: [
-				"Operated and maintained custom coating machinery, ensuring quality control and customer satisfaction",
-				"Adjusted process within specifications, maintaining work area in accordance with all applicable safety and environmental policies"
-			],
-			skills: ["Quality Control", "Machine Operation", "Safety Protocols", "Process Optimization"],
-			technologies: ["Manufacturing", "Quality Control", "Process Management"],
-			icon: Cog,
-		},
-		{
-			title: "Call Center Operator",
-			company: "Solid Security",
-			period: "August 2012 - May 2015",
-			location: "Katowice, Poland",
-			description: [
-				"Managed all outbound calls for customers to inform alarm activation instances as reported by Solid Security's managed services",
-				"Handled customer inquiries, offering solutions and maintaining high service standards"
-			],
-			skills: ["Customer Service", "Technical Support", "Communication", "Problem Solving"],
-			technologies: ["Customer Support", "Communication Systems", "Security Systems"],
-			icon: Phone,
 		},
 	];
 
 	const education = [
 		{
-			title: 'Web Development Studies',
-			institution: 'Online Education',
+			title: 'Web Development',
+			institution: 'Self-directed learning',
 			period: '2022 - Present',
 			type: 'Education',
 			description: [
-				'Completed comprehensive React and Next.js courses by Maximilian Schwarzmuller',
-				'Node.js and backend development training by Maximilian Schwarzmuller',
-				'Frontend development training through MMC School',
-				'Continually expands technical knowledge in Web Development through online programs'
+				'Continually expanding technical knowledge across backend architecture, databases and cloud infrastructure',
 			],
-			skills: ['Web Development', 'Frontend', 'Backend', 'Full Stack'],
+			skills: ['Backend', 'Frontend', 'Architecture', 'Cloud'],
 			icon: <GraduationCap className='w-5 h-5' />,
 		},
 		{

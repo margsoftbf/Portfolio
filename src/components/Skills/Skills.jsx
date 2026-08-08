@@ -10,23 +10,20 @@ import {
 	SiPostgresql,
 	SiMongodb,
 	SiTailwindcss,
-	SiSass,
-	SiRedux,
 	SiGit,
 	SiDocker,
-	SiFigma,
 	SiJest,
 	SiPostman,
-	SiSupabase,
 	SiAmazonaws,
 	SiGithubactions,
-	// SiRedis,
+	SiRedis,
+	SiGraphql,
+	SiPlaywright,
 	// SiKubernetes,
-	// SiGraphql,
 	// SiTensorflow,
 } from 'react-icons/si';
 import { FaKey, FaServer, FaVial, FaRobot } from 'react-icons/fa';
-import { MdStorage, MdQueryStats } from 'react-icons/md';
+import { MdStorage, MdQueryStats, MdOutlineQueue } from 'react-icons/md';
 
 const skills = [
 	{
@@ -50,19 +47,9 @@ const skills = [
 		color: 'text-white',
 	},
 	{
-		name: 'Sass',
-		icon: <SiSass className='w-8 h-8' />,
-		color: 'text-pink-400',
-	},
-	{
 		name: 'Tailwind',
 		icon: <SiTailwindcss className='w-8 h-8' />,
 		color: 'text-cyan-300',
-	},
-	{
-		name: 'Redux',
-		icon: <SiRedux className='w-8 h-8' />,
-		color: 'text-purple-400',
 	},
 	{
 		name: 'Node.js',
@@ -110,16 +97,6 @@ const skills = [
 		color: 'text-orange-300',
 	},
 	{
-		name: 'Supabase',
-		icon: <SiSupabase className='w-8 h-8' />,
-		color: 'text-green-400',
-	},
-	{
-		name: 'Figma',
-		icon: <SiFigma className='w-8 h-8' />,
-		color: 'text-purple-400',
-	},
-	{
 		name: 'Git',
 		icon: <SiGit className='w-8 h-8' />,
 		color: 'text-orange-400',
@@ -134,11 +111,11 @@ const skills = [
 	// 	icon: <SiKubernetes className='w-8 h-8' />,
 	// 	color: 'text-blue-400',
 	// },
-	// {
-	// 	name: 'GraphQL',
-	// 	icon: <SiGraphql className='w-8 h-8' />,
-	// 	color: 'text-pink-400',
-	// },
+	{
+		name: 'GraphQL',
+		icon: <SiGraphql className='w-8 h-8' />,
+		color: 'text-pink-400',
+	},
 	{
 		name: 'Jest',
 		icon: <SiJest className='w-8 h-8' />,
@@ -169,11 +146,21 @@ const skills = [
 		icon: <MdQueryStats className='w-8 h-8' />,
 		color: 'text-orange-500',
 	},
-	// {
-	// 	name: 'Redis',
-	// 	icon: <SiRedis className='w-8 h-8' />,
-	// 	color: 'text-red-500',
-	// }
+	{
+		name: 'Redis',
+		icon: <SiRedis className='w-8 h-8' />,
+		color: 'text-red-500',
+	},
+	{
+		name: 'BullMQ',
+		icon: <MdOutlineQueue className='w-8 h-8' />,
+		color: 'text-amber-400',
+	},
+	{
+		name: 'Playwright',
+		icon: <SiPlaywright className='w-8 h-8' />,
+		color: 'text-emerald-400',
+	},
 ];
 
 const Skills = () => {
