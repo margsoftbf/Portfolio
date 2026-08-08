@@ -79,8 +79,12 @@ const Experience = () => {
 			description: [
 				"Delivered features end to end, from database design through API to frontend and deployment",
 				"Built applications with React, Next.js and TypeScript on NestJS and PostgreSQL APIs",
+				"Implemented database operations with TypeORM including filtering, sorting and custom queries",
 				"Managed AWS infrastructure: Cognito, Lambda, App Runner, Amplify, S3, SES and CloudWatch monitoring",
+				"Handled database management and optimisations for improved system efficiency",
+				"Integrated third-party services and managed cloud infrastructure",
 				"Integrated AI and LLM capabilities into production features",
+				"Collaborated in a cross-functional team to deliver fullstack solutions, ensuring responsiveness, performance and a seamless user experience",
 				"Wrote end-to-end tests and monitored production errors with Sentry",
 			],
 			skills: [
